@@ -16,6 +16,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{twitter_oauth}
   s.rubygems_version = %q{1.3.1}
+  s.platform = 'java'
   s.summary = %q{twitter_oauth is a Ruby client for the Twitter API using OAuth.}
 
   if s.respond_to? :specification_version then
@@ -24,7 +25,7 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<oauth>, [">= 0.4.1"])
-      s.add_runtime_dependency(%q<json>, [">= 1.1.9"])
+      s.add_runtime_dependency(%q<json-jruby>, ["= 1.4.1"])
       s.add_runtime_dependency(%q<mime-types>, [">= 1.16"])
       %w(shoulda mocha).each do |dep|
         s.add_development_dependency dep
